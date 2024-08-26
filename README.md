@@ -15,10 +15,10 @@ Este projeto é um portfólio pessoal desenvolvido como parte de um trabalho de 
 
 ## Tecnologias Utilizadas
 
-- HTML5 <img src="html5.svg" alt="HTML5" width="15" height="15">
+- HTML5 <img src="html5.svg" alt="HTML5" width="20" height="20">
 
-- CSS <img src="css3.svg" alt="CSS3" width="15" height="15">
+- CSS <img src="css3.svg" alt="CSS3" width="20" height="20">
 
 **Lucas Justino Turatto**
-Curso de [Análise e desenvolvimento de sistemas]
-Universidade [UNINTER]
+- Curso de `Análise e desenvolvimento de sistemas`
+- Universidade `UNINTER`

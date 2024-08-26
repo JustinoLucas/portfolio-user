@@ -31,13 +31,10 @@ Header .header-bar {
   background-color: #2f3e4600;
 }
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
+
+
+
+
 
 
 
@@ -152,7 +149,7 @@ Header .header-bar {
 	margin-top: 20px;
 }
 
-/* Pagina Sobre */
+/* Pagina Formação */
 
 .coisa-sobre {
 	display: flex;
@@ -185,4 +182,123 @@ Header .header-bar {
 	font-size: 1.2em;
 	font-weight: 300;
 	line-height: 1.5em;
+}
+
+/* Pagina Contato */
+
+.contato-inicio h1 {
+	text-align: center;
+	font-family: "New Amsterdam", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #CAD2C5;
+	font-size: 3em;
+}
+
+.pc1 {
+	background-color: #2f3e46;
+	color: #ffffff;
+	font-family: "Montserrat", sans-serif;
+	font-size: 2em;
+	font-weight: 400;
+	line-height: 1.5em;
+}
+.contato {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.contato h1 {
+	text-align: center;
+	font-family: "New Amsterdam", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #CAD2C5;
+	font-size: 3em;
+}
+
+.desc-contato {
+	text-align: center;
+}
+
+.coisa-contato {
+	width: 80%;
+	background-color: #2F3E46;
+	border-radius: 20px;
+	padding: 40px;
+}
+
+.formulario-desc {
+	background-color: #2F3E46;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.formulario {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #2F3E46;
+}
+
+.inputs {
+	background-color: #52796f;
+	height: 30px;
+	width: 400px;
+	color: #ffffff;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.2em;
+	font-weight: 200;
+	padding: 5px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
+	margin: 10px;
+}
+
+#area-texto{
+	background-color: #52796f;
+	height: 150px;
+	width: 400px;
+	max-width: 400px;
+	color: #ffffff;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.2em;
+	font-weight: 200;
+	padding: 5px;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
+	margin: 10px;
+}
+
+#botao-enviar{
+	background-color: #52796f;
+	width: 410px;
+	color: #ffffff;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.5em;
+	font-weight: 500;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	margin: 10px;
+	transition: 0.3s;
+	/* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151); */
+
+}
+
+#botao-enviar:hover{
+	background-color: #CAD2C5;
+	color: #354F52;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
+	cursor: pointer;
+
+}
+
+::placeholder {
+	color: white;
 }

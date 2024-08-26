@@ -15,8 +15,7 @@ Este projeto é um portfólio pessoal desenvolvido como parte de um trabalho de 
 
 ## Tecnologias Utilizadas
 
-- HTML5
-- CSS
+![HTML5](html5.svg) ![CSS3](css3.svg)
 
 **Lucas Justino Turatto**
 Curso de [Análise e desenvolvimento de sistemas]

@@ -3,6 +3,7 @@
 * {
     padding: 0;
     margin: 0;
+	background-color: #FFC8DD;
 }
 
 
@@ -10,14 +11,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-/* Header */
+Header
 .header-bar {
     display: flex;
-    background-color: black;
-    width: 100%;
+    background-color: #BDE0FE;
     height: 50px;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+	border-radius: 15px;
+	margin: 10px;
 }
 
 
@@ -25,15 +27,22 @@
     Links   */
 
 .link-nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
     color: rgb(255, 255, 255);
+	background-color: #BDE0FE;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal;
+	width: 150px;
+	height: 100%;
     transition: 0.3s;
 }
 
 .link-nav:hover {
-    color: rgb(192, 0, 0);
+	background-color: white;
+    color: #FFAFCC;
 }

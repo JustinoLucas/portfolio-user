@@ -152,3 +152,37 @@ Header .header-bar {
 	margin-top: 20px;
 }
 
+/* Pagina Sobre */
+
+.coisa-sobre {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.sobre-inicio h1 {
+	text-align: center;
+	font-family: "New Amsterdam", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #CAD2C5;
+	font-size: 3em;
+}
+
+.sub-sobre {
+	width: 80%;
+	background-color: #2F3E46;
+	border-radius: 50px;
+	padding: 40px;
+}
+
+.ps1 {
+	background-color: #2f3e4600;
+	color: #ffffff;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.2em;
+	font-weight: 300;
+	line-height: 1.5em;
+}

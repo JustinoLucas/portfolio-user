@@ -21,9 +21,9 @@ Acesse ao projeto com o link abaixo
 
 ## Tecnologias Utilizadas
 
-- HTML5 <img src="html5.svg" alt="HTML5" width="20" height="20">
+- HTML5 <img src="/assets/html5.svg" alt="HTML5" width="20" height="20">
 
-- CSS <img src="css3.svg" alt="CSS3" width="20" height="20">
+- CSS <img src="/assets/css3.svg" alt="CSS3" width="20" height="20">
 
 **Lucas Justino Turatto**
 - Curso de `Análise e desenvolvimento de sistemas`

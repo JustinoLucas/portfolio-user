@@ -3,8 +3,13 @@
 * {
 	padding: 0;
 	margin: 0;
+	
+}
+
+body {
 	background-color: #354F52;
 }
+
 
 
 /* fonts */
@@ -30,11 +35,6 @@ Header .header-bar {
   'opsz' 24;
   background-color: #2f3e4600;
 }
-
-
-
-
-
 
 
 

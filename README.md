@@ -12,6 +12,12 @@ Este projeto é um portfólio pessoal desenvolvido como parte de um trabalho de 
 
 - Uma página `Contato` contendo meu contato com formulário.
 
+## Como visualizar o Projeto
+
+Acesse ao projeto com o link abaixo
+
+- https://justinolucas.blog
+
 
 ## Tecnologias Utilizadas
 

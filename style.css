@@ -104,6 +104,15 @@ body{
 	color: #00BBF9;
 }
 
+.link-nav-pages a:nth-child(1).active{
+	color: #00F5D4;
+}
+
+.link-nav-pages a:nth-child(2).active{
+	color: #9B5DE5;
+}
+
+
 /*        */
 /* Inicio */
 /*        */
@@ -159,7 +168,8 @@ body{
 
 .inicio-div-bola{
 	padding: 12.7%;
-	background-color: rgb(226 72 72);
+	/* background-color: rgb(226 72 72); */
+	background-color: #00F5D4;
 	border-radius: 9999px;
 	top: -67px;
 	left: 32px;
@@ -172,9 +182,9 @@ body{
 	vertical-align: middle;
 }
 
-/*         */
-/* Projeto */
-/*         */
+/*        */
+/* Resumo */
+/*        */
 
 .resumo-div-f {
 	background-color: #e5fefa;
@@ -188,7 +198,7 @@ body{
 	display: block;
 	line-height: .8;
 	text-align: center;
-	max-width: 60%;
+	max-width: 50%;
 }
 
 .resumo-div-1 {
@@ -207,5 +217,165 @@ body{
 	text-transform: uppercase;
 	font-family: "Josefin Sans", system-ui;
 	font-weight: 400;
-	font-size: 40px;
+	font-size: 32px;
+	letter-spacing: -.1rem;
+}
+
+/*       */
+/* Sobre */
+/*       */
+
+
+
+.sobre-div {
+	overflow-x: hidden;
+	height: 100vh;
+	position: relative;
+}
+
+.sobre-barras {
+	padding-left: 0;
+	padding-right: 0;
+	display: flex;
+	justify-content: space-evenly;
+	height: 100vh;
+
+}
+
+.barras {
+	background-color: #99fbed;
+	width: 40px;
+	height: 100%;
+}
+
+.sobre-div-resumo {
+	background-color: rgb(255, 255, 255);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	text-align: center;
+
+}
+
+.sobre-div-resumo > span {
+	color: rgb(39 39 39);
+	line-height: 1;
+	text-transform: uppercase;
+	font-family: "Josefin Sans", system-ui;
+	font-weight: 100;
+	font-size: 28px;
+	letter-spacing: -.1rem;
+}
+
+
+/*          */
+/* Projetos */
+/*          */
+
+
+.projeto-div {
+	background-color: white;
+}
+
+.projeto-div-um {
+	padding-left: 30px;
+	padding-right: 30px;
+	color: rgb(39, 39, 39);
+	padding-bottom: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 555px;
+}
+
+.projeto-div-um-texto{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.projeto-div-um-texto h1 {
+	letter-spacing: -3px;
+	line-height: 1;
+	text-transform: uppercase;
+	width: 50%;
+	margin: 0;
+	font-family: "Josefin Sans", system-ui;
+	font-weight: 600;
+	font-size: 80px;
+}
+
+.projeto-div-um-texto p {
+	letter-spacing: -1px;
+	line-height: 1;
+	width: 50%;
+	margin: 0;
+	font-family: "Josefin Sans", system-ui;
+	font-weight: 300;
+	font-size: 32px;
+}
+
+.projeto-link {
+	display: flex;
+	flex-direction: row;
+	transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+	color: rgb(39, 39, 39);
+	text-decoration: none;
+}
+
+.projeto-texto {
+	width: 50%;
+	color: rgb(39, 39, 39);
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.projeto-texto p{
+	padding-left: 22px;
+	padding-right: 22px;
+	padding-top: 12px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+
+}
+
+.projeto-texto p > span {
+	text-transform: uppercase;
+	font-family: "Josefin Sans", system-ui;
+	font-weight: 400;
+	/* font-size: 30px; */
+	font-size: 2.5vw;
+	letter-spacing: -2px;
+	line-height: 1;
+}
+
+.projeto-texto h2 {
+	font-family: "Josefin Sans", system-ui;
+	font-weight: 400;
+	font-size: 7vw;
+	text-transform: uppercase;
+	padding-right: 22px;
+	padding-left: 1rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+.projeto-card1{
+	/* background-image: url(/assets/mockup-eletec.png); */
+	background-position: center;
+	background-size: cover;
+	width: 50%;
+	padding-top: 33%;
+}
+
+.projeto-link:hover {
+	background-color: #F5EEFC;
 }

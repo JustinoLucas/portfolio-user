@@ -11,86 +11,199 @@
 </head>
 
 <body>
-
-  <nav class="nav-bar"> <!-- Navbar onde ficam os links para os setores -->
-    <a href="#" class="link-nav-name"> <!-- Link do meu nome para o inicio -->
-      <div class="div-nav-name">
-        <span>justino.</span>
-        <span>portfolio</span>
+  <div class="secao">
+    <nav class="nav-bar"> <!-- Navbar onde ficam os links para os setores -->
+      <a href="#" class="link-nav-name"> <!-- Link do meu nome para o inicio -->
+        <div class="div-nav-name">
+          <span>justino.</span>
+          <span>portfolio</span>
+        </div>
+        <div class="div-nav-name">
+          <span>2024</span>
+          <span>©</span>
+        </div>
+      </a>
+      <div class="link-nav-pages"> <!-- Agrupamento de links -->
+        <a  onclick="scrollParaDivIni()" id="link1">Inicio</a>
+        <a  onclick="scrollParaDivProj()" id="link2">Projetos</a>
+        <a>Formação</a>
+        <a>Contato</a>
       </div>
-      <div class="div-nav-name">
-        <span>2024</span>
-        <span>©</span>
-      </div>
-    </a>
-    <div class="link-nav-pages"> <!-- Agrupamento de links -->
-      <a href="">Inicio</a>
-      <a href="">Projetos</a>
-      <a href="">Formação</a>
-      <a href="">Contato</a>
-    </div>
-  </nav>
-  <div class="inicio-div-f">
-    <div class="inicio-div">
-      <div class="inicio-div-esq">
-        <p>Olá, eu sou</p>
-        <img src="/assets/myname.png" alt="">
-        <div>
-          <p id="name-desc-1">Dev game</p>
-          <p>de Curitiba, Brasil</p>
+    </nav>
+    <div class="inicio-div-f" id="div1">
+      <div class="inicio-div">
+        <div class="inicio-div-esq">
+          <p>Olá, eu sou</p>
+          <img src="/assets/myname.png" alt="">
+          <div>
+            <p id="name-desc-1">Dev game</p>
+            <p>de Curitiba, Brasil</p>
+          </div>
+        </div>
+        <div class="inicio-div-dir">
+          <div class="inicio-div-bola"></div>
+          <img src="/assets/justino-eu.png" alt="">
         </div>
       </div>
-      <div class="inicio-div-dir">
-        <div class="inicio-div-bola"></div>
-        <img src="/assets/justino-eu.png" alt="">
+    </div>
+    <div class="resumo-div-f">
+      <div class="resumo-div">
+        <div class="resumo-div-1">
+          <div class="resumo-div-2">
+            <div><span class="material-symbols-outlined">
+                music_note
+              </span></div>
+            <span>Entusiasta de Musica</span>
+          </div>
+        </div>
+        <div class="resumo-div-1">
+          <div class="resumo-div-2">
+            <div><span class="material-symbols-outlined">
+                favorite
+              </span></div>
+            <span>Player 2</span>
+          </div>
+        </div>
+        <div class="resumo-div-1">
+          <div class="resumo-div-2">
+            <div><span class="material-symbols-outlined">
+                computer
+              </span></div>
+            <span>Desenvolvedor Back End</span>
+          </div>
+        </div>
+        <div class="resumo-div-1">
+          <div class="resumo-div-2">
+            <div><span class="material-symbols-outlined">
+                two_wheeler
+              </span></div>
+            <span>Pilotar Moto</span>
+          </div>
+        </div>
+        <div class="resumo-div-1">
+          <div class="resumo-div-2">
+            <div><span class="material-symbols-outlined">
+                sports_esports
+              </span></div>
+            <span>souls like</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sobre-div-f">
+      <div class="sobre-div">
+        <div class="sobre-barras">
+          <div class="barras"></div>
+          <div class="barras"></div>
+          <div class="barras"></div>
+          <div class="barras"></div>
+          <div class="barras"></div>
+          <div class="barras"></div>
+          <div class="barras"></div>
+          <div class="barras"></div>
+        </div>
+        <div class="sobre-div-resumo">
+          <span>
+            Sou Lucas Justino, estudante de Análise e Desenvolvimento de Sistemas, com formação técnica em
+            Desenvolvimento
+            de Sistemas e experiência de mais de 10 anos em montagem e manutenção de computadores. Estou me
+            especializando
+            em programação backend e IA, além de estudar React, hardware e inglês. Busco oportunidades em programação e
+            como técnico de informática, com planos de criar jogos e aplicativos móveis.
+          </span>
+        </div>
       </div>
     </div>
   </div>
-  <div class="resumo-div-f">
-    <div class="resumo-div">
-      <div class="resumo-div-1">
-        <div class="resumo-div-2"> 
-          <div><span class="material-symbols-outlined">
-            music_note
-          </span></div>
-          <span>Entusiasta de Musica</span>
-        </div>
-      </div>
-      <div class="resumo-div-1">
-        <div class="resumo-div-2">
-          <div><span class="material-symbols-outlined">
-            favorite
-            </span></div>
-          <span>Player 2</span>
-        </div>
-      </div>
-      <div class="resumo-div-1">
-        <div class="resumo-div-2">
-          <div><span class="material-symbols-outlined">
-            computer
-            </span></div>
-          <span>Desenvolvedor Back End</span>
-        </div>
-      </div>
-      <div class="resumo-div-1">
-        <div class="resumo-div-2">
-          <div><span class="material-symbols-outlined">
-            two_wheeler
-            </span></div>
-          <span>Pilotar Moto</span>
-        </div>
-      </div>
-      <div class="resumo-div-1">
-        <div class="resumo-div-2">
-          <div><span class="material-symbols-outlined">
-            sports_esports
-            </span></div>
-          <span>souls like</span>
-        </div>
+  <div class="projeto-div" id="div2">
+    <div class="projeto-div-um">
+      <div class="projeto-div-um-texto">
+        <h1>PROJETOS</h1>
+        <p>
+          Abaixo está uma lista dos projetos que eu terminei.
+        </p>
       </div>
     </div>
+    <a href="https://www.eletecportas.com.br" class="projeto-link">
+      <div class="projeto-texto">
+        <p><span>LOGO / identidade de marca / website</span><span>©2024</span></p>
+        <h2><span>ELETEC</span></h2>
+      </div>
+      <div class="projeto-card1" style="background-image: url(/assets/mockup-eletec.png);">
+
+      </div>
+    </a>
+    <a href="https://justinolucas.github.io/CSS-Projeto-Blog/" class="projeto-link">
+      <div class="projeto-texto">
+        <p><span>website</span><span>©2022</span></p>
+        <h2><span>blog</span></h2>
+      </div>
+      <div class="projeto-card1" style="background-image: url(/assets/mockup-blog.png);">
+
+      </div>
+    </a>
+    <a href="https://github.com/JustinoLucas" class="projeto-link">
+      <div class="projeto-texto">
+        <p><span>projetos</span><span>©2024</span></p>
+        <h2><span>github</span></h2>
+      </div>
+      <div class="projeto-card1" style="background-image: url(/assets/github.png);">
+
+      </div>
+    </a>
   </div>
 
 </body>
 
 </html>
+
+
+<script>
+
+  // function scrollParaDivIni() {
+  //   document.getElementById('div1').scrollIntoView({ behavior: 'smooth' });
+  // }
+
+  // function scrollParaDivProj() {
+  //   document.getElementById('div2').scrollIntoView({ behavior: 'smooth' });
+  // }
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+        const sections = document.querySelectorAll('.secao');
+        const menuLinks = document.querySelectorAll('.link-nav-pages a');
+
+        // Função para rolar até a div correspondente ao link
+        function scrollToSection(event) {
+            const targetId = event.target.id.replace('link', 'div');
+            const targetSection = document.getElementById(targetId);
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+
+            // Remover classe 'active' de todos os links
+            menuLinks.forEach(link => link.classList.remove('active'));
+            // Adicionar classe 'active' ao link clicado
+            event.target.classList.add('active');
+        }
+
+        // Adiciona evento de clique aos links
+        menuLinks.forEach(link => {
+            link.addEventListener('click', scrollToSection);
+        });
+
+        // Observer para detectar qual seção está em visualização
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const link = document.querySelector(`.link-nav-pages a#link${entry.target.id.replace('div', '')}`);
+                if (entry.isIntersecting) {
+                    menuLinks.forEach(link => link.classList.remove('active'));
+                    link.classList.add('active');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    });
+
+</script>

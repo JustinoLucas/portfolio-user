@@ -16,7 +16,7 @@ Este projeto é um portfólio pessoal desenvolvido como parte de um trabalho de 
 
 Acesse ao projeto com o link abaixo
 
-- 
+- https://justinolucas.github.io/portfolio-user/
 
 
 ## Tecnologias Utilizadas

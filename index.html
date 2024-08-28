@@ -11,26 +11,27 @@
 </head>
 
 <body>
-  <div class="secao">
-    <nav class="nav-bar"> <!-- Navbar onde ficam os links para os setores -->
-      <a href="#" class="link-nav-name"> <!-- Link do meu nome para o inicio -->
-        <div class="div-nav-name">
-          <span>justino.</span>
-          <span>portfolio</span>
-        </div>
-        <div class="div-nav-name">
-          <span>2024</span>
-          <span>©</span>
-        </div>
-      </a>
-      <div class="link-nav-pages"> <!-- Agrupamento de links -->
-        <a onclick="scrollParaDivIni()" id="link1">Inicio</a>
-        <a onclick="scrollParaDivProj()" id="link2">Projetos</a>
-        <a>Formação</a>
-        <a>Contato</a>
+
+  <nav class="nav-bar"> <!-- Navbar onde ficam os links para os setores -->
+    <a href="#" class="link-nav-name"> <!-- Link do meu nome para o inicio -->
+      <div class="div-nav-name">
+        <span>justino.</span>
+        <span>portfolio</span>
       </div>
-    </nav>
-    <div class="inicio-div-f" id="div1">
+      <div class="div-nav-name">
+        <span>2024</span>
+        <span>©</span>
+      </div>
+    </a>
+    <div class="link-nav-pages"> <!-- Agrupamento de links -->
+      <a onclick="scrollParaDivIni()" id="link1">Inicio</a>
+      <a onclick="scrollParaDivProj()" id="link2">Projetos</a>
+      <a id="link3">Formação</a>
+      <a>Contato</a>
+    </div>
+  </nav>
+  <div class="secao" id="div1">
+    <div class="inicio-div-f" >
       <div class="inicio-div">
         <div class="inicio-div-esq">
           <p>Olá, eu sou</p>
@@ -104,19 +105,17 @@
         </div>
         <div class="sobre-div-resumo">
           <span>
-            Sou Lucas Justino, estudante de Análise e Desenvolvimento de Sistemas, com formação técnica em
-            Desenvolvimento
-            de Sistemas e experiência de mais de 10 anos em montagem e manutenção de computadores. Estou me
-            especializando
-            em programação backend e IA, além de estudar React, hardware e inglês. Busco oportunidades em programação e
-            como técnico de informática, com planos de criar jogos e aplicativos móveis.
+            Estudante de Análise e Desenvolvimento de Sistemas, com formação técnica em Desenvolvimento de Sistemas e
+            experiência de mais de 10 anos em montagem e manutenção de computadores. Estou me especializando em
+            programação backend e Games, além de estudar React, hardware e inglês. Busco oportunidades em programação e
+            como técnico de informática, com planos de criar jogos e aplicativos móveis no futuro.
           </span>
         </div>
       </div>
     </div>
   </div>
-  <div id="secao">
-    <div class="projeto-div" id="div2">
+  <div class="secao" id="div2">
+    <div class="projeto-div" >
       <div class="projeto-div-um">
         <div class="projeto-div-um-texto">
           <h1>PROJETOS</h1>
@@ -136,7 +135,7 @@
       </a>
       <a href="https://justinolucas.github.io/CSS-Projeto-Blog/" class="projeto-link">
         <div class="projeto-texto">
-          <p><span>website</span><span>©2022</span></p>
+          <p><span>learning website</span><span>©2022</span></p>
           <h2><span>blog</span></h2>
         </div>
         <div class="projeto-card1" style="background-image: url(/assets/mockup-blog.png);">
@@ -153,6 +152,68 @@
         </div>
       </a>
     </div>
+  </div>
+  <div class="secao" id="div3">
+    <div class="foco-div-1">
+      <p>
+        Eu já terminei
+        <span>HTML</span>
+        <span><span> / </span>javascript</span>
+        <span><span> / </span>css</span>
+        <span><span> / </span>hardware</span>
+        .
+      </p>
+      <p>
+        mas agora estou focado em:
+      </p>
+      <p>
+        <span>game</span>
+        <span>engine</span>
+        <span>godot.</span>
+      </p>
+    </div>
+    <div class="trabalho-div">
+      <p>6 anos</p>
+      <p>de trabalho</p>
+      <p>como assistente <br>& autonomo</p>
+      <p>do escritorio<br>& visitas</p>
+      <p>como um freelancer<br>& várias empresas</p>
+      <p>em casa<br>& na rua</p>
+    </div>
+    <div class="formacao-div">
+      <div class="formacao-subdiv1">
+        <h3>educação</h3> <!-- Estilos em linha -->
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <div style="max-width: 88%; padding-bottom: 4vw; letter-spacing: -.17vw;">
+            <p style="margin-bottom: .5rem;">2024 <span>- 2026</span></p>
+            <p>bacharelado.</p>
+            <p>Universidade UNINTER - Análise e Desenvolvimento de Sistemas.</p>
+            <p>Curitiba, Brasil.</p>
+            <p style="margin-bottom: .5rem; margin-top: .8rem;">2014 <span>- 2016 - interrompido</span></p>
+            <p>bacharelado.</p>
+            <p>Universidade Positivo - Design Gráfico.</p>
+            <p>Curitiba, Brasil.</p>
+          </div>
+        </div>
+      </div>
+      <div class="experiancia-div">
+        <h3>experiencia</h3>
+        <div class="experiancia-div-1">
+          <div style="max-width: 470px;">
+            <p>2019 <span> - 2021</span> - ELETEC.</p>
+            <p>Auxiliar Técnico Eletrônico</p>
+            <p>/ Curitiba, Brasil</p>
+          </div>
+          <div style="max-width: 470px;">
+            <p>2024 - LINKSERV -.</p>
+            <p>Asistente de informática
+            </p>
+            <p>/ Pinhais, Brasil</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 </body>

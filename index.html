@@ -225,7 +225,15 @@
         </div>
       </div>
       <div class="contato-div2">
-
+        <p>formulário de contato</p>
+        <div class="formulario">
+          <form>
+            <input type="text" placeholder="Digite seu nome" required>
+            <input type="email" placeholder="Digite seu e-mail" required>
+            <textarea name="" id="" placeholder="Digite seu texto" required></textarea>
+            <button type="submit" onclick="show_alert()">Enviar</button>
+          </form>
+        </div>
       </div>
     </div>
     <div class="rodape-div">
@@ -240,38 +248,35 @@
 
 
 <script>
-
-  // function scrollParaDivIni() {
-  //   document.getElementById('div1').scrollIntoView({ behavior: 'smooth' });
-  // }
-
-  // function scrollParaDivProj() {
-  //   document.getElementById('div2').scrollIntoView({ behavior: 'smooth' });
-  // }
+  // Função para criar alertbox ao enviar formulário
+  function show_alert() {
+  alert("E-mail enviado com sucesso");
+}
 
 
+
+
+  // Função para rolar até a div correspondente ao link e observar em qual seção esta ativo 
   document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll('.secao');
     const menuLinks = document.querySelectorAll('.link-nav-pages a');
 
-    // Função para rolar até a div correspondente ao link
     function scrollToSection(event) {
       const targetId = event.target.id.replace('link', 'div');
       const targetSection = document.getElementById(targetId);
       targetSection.scrollIntoView({ behavior: 'smooth' });
 
-      // Remover classe 'active' de todos os links
       menuLinks.forEach(link => link.classList.remove('active'));
-      // Adicionar classe 'active' ao link clicado
+
       event.target.classList.add('active');
     }
 
-    // Adiciona evento de clique aos links
+
     menuLinks.forEach(link => {
       link.addEventListener('click', scrollToSection);
     });
 
-    // Observer para detectar qual seção está em visualização
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         const link = document.querySelector(`.link-nav-pages a#link${entry.target.id.replace('div', '')}`);

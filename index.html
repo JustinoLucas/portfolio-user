@@ -24,8 +24,8 @@
         </div>
       </a>
       <div class="link-nav-pages"> <!-- Agrupamento de links -->
-        <a  onclick="scrollParaDivIni()" id="link1">Inicio</a>
-        <a  onclick="scrollParaDivProj()" id="link2">Projetos</a>
+        <a onclick="scrollParaDivIni()" id="link1">Inicio</a>
+        <a onclick="scrollParaDivProj()" id="link2">Projetos</a>
         <a>Formação</a>
         <a>Contato</a>
       </div>
@@ -115,42 +115,44 @@
       </div>
     </div>
   </div>
-  <div class="projeto-div" id="div2">
-    <div class="projeto-div-um">
-      <div class="projeto-div-um-texto">
-        <h1>PROJETOS</h1>
-        <p>
-          Abaixo está uma lista dos projetos que eu terminei.
-        </p>
+  <div id="secao">
+    <div class="projeto-div" id="div2">
+      <div class="projeto-div-um">
+        <div class="projeto-div-um-texto">
+          <h1>PROJETOS</h1>
+          <p>
+            Abaixo está uma lista dos projetos que eu terminei.
+          </p>
+        </div>
       </div>
+      <a href="https://www.eletecportas.com.br" class="projeto-link">
+        <div class="projeto-texto">
+          <p><span>LOGO / identidade de marca / website</span><span>©2024</span></p>
+          <h2><span>ELETEC</span></h2>
+        </div>
+        <div class="projeto-card1" style="background-image: url(/assets/mockup-eletec.png);">
+
+        </div>
+      </a>
+      <a href="https://justinolucas.github.io/CSS-Projeto-Blog/" class="projeto-link">
+        <div class="projeto-texto">
+          <p><span>website</span><span>©2022</span></p>
+          <h2><span>blog</span></h2>
+        </div>
+        <div class="projeto-card1" style="background-image: url(/assets/mockup-blog.png);">
+
+        </div>
+      </a>
+      <a href="https://github.com/JustinoLucas" class="projeto-link">
+        <div class="projeto-texto">
+          <p><span>projetos</span><span>©2024</span></p>
+          <h2><span>github</span></h2>
+        </div>
+        <div class="projeto-card1" style="background-image: url(/assets/github.png);">
+
+        </div>
+      </a>
     </div>
-    <a href="https://www.eletecportas.com.br" class="projeto-link">
-      <div class="projeto-texto">
-        <p><span>LOGO / identidade de marca / website</span><span>©2024</span></p>
-        <h2><span>ELETEC</span></h2>
-      </div>
-      <div class="projeto-card1" style="background-image: url(/assets/mockup-eletec.png);">
-
-      </div>
-    </a>
-    <a href="https://justinolucas.github.io/CSS-Projeto-Blog/" class="projeto-link">
-      <div class="projeto-texto">
-        <p><span>website</span><span>©2022</span></p>
-        <h2><span>blog</span></h2>
-      </div>
-      <div class="projeto-card1" style="background-image: url(/assets/mockup-blog.png);">
-
-      </div>
-    </a>
-    <a href="https://github.com/JustinoLucas" class="projeto-link">
-      <div class="projeto-texto">
-        <p><span>projetos</span><span>©2024</span></p>
-        <h2><span>github</span></h2>
-      </div>
-      <div class="projeto-card1" style="background-image: url(/assets/github.png);">
-
-      </div>
-    </a>
   </div>
 
 </body>
@@ -169,41 +171,41 @@
   // }
 
 
-  document.addEventListener("DOMContentLoaded", function() {
-        const sections = document.querySelectorAll('.secao');
-        const menuLinks = document.querySelectorAll('.link-nav-pages a');
+  document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll('.secao');
+    const menuLinks = document.querySelectorAll('.link-nav-pages a');
 
-        // Função para rolar até a div correspondente ao link
-        function scrollToSection(event) {
-            const targetId = event.target.id.replace('link', 'div');
-            const targetSection = document.getElementById(targetId);
-            targetSection.scrollIntoView({ behavior: 'smooth' });
+    // Função para rolar até a div correspondente ao link
+    function scrollToSection(event) {
+      const targetId = event.target.id.replace('link', 'div');
+      const targetSection = document.getElementById(targetId);
+      targetSection.scrollIntoView({ behavior: 'smooth' });
 
-            // Remover classe 'active' de todos os links
-            menuLinks.forEach(link => link.classList.remove('active'));
-            // Adicionar classe 'active' ao link clicado
-            event.target.classList.add('active');
-        }
+      // Remover classe 'active' de todos os links
+      menuLinks.forEach(link => link.classList.remove('active'));
+      // Adicionar classe 'active' ao link clicado
+      event.target.classList.add('active');
+    }
 
-        // Adiciona evento de clique aos links
-        menuLinks.forEach(link => {
-            link.addEventListener('click', scrollToSection);
-        });
-
-        // Observer para detectar qual seção está em visualização
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                const link = document.querySelector(`.link-nav-pages a#link${entry.target.id.replace('div', '')}`);
-                if (entry.isIntersecting) {
-                    menuLinks.forEach(link => link.classList.remove('active'));
-                    link.classList.add('active');
-                }
-            });
-        }, { threshold: 0.2 });
-
-        sections.forEach(section => {
-            observer.observe(section);
-        });
+    // Adiciona evento de clique aos links
+    menuLinks.forEach(link => {
+      link.addEventListener('click', scrollToSection);
     });
+
+    // Observer para detectar qual seção está em visualização
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const link = document.querySelector(`.link-nav-pages a#link${entry.target.id.replace('div', '')}`);
+        if (entry.isIntersecting) {
+          menuLinks.forEach(link => link.classList.remove('active'));
+          link.classList.add('active');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  });
 
 </script>

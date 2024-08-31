@@ -18,11 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
         event.target.classList.add('active');
     }
 
-
     menuLinks.forEach(link => {
         link.addEventListener('click', scrollToSection);
     });
-
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

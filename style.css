@@ -1,12 +1,17 @@
-/*    Sumário   */
-/* 1 - All      */
-/* 2 - Fonts    */
-/* 3 - Navbar   */
-/* 4 - Inicio   */
-/* 5 - Resumo   */
-/* 6 - Sobre    */
-/* 7 - Projetos */
-/* 8 - Foco     */
+/*    Sumário      */
+/* 1 - All         */
+/* 2 - Fonts       */
+/* 3 - Navbar      */
+/* 4 - Inicio      */
+/* 5 - Resumo      */
+/* 6 - Sobre       */
+/* 7 - Projetos    */
+/* 8 - Foco        */
+/* 9 - Trabalho    */
+/* 10 - Formação   */
+/* 11 - Contato    */
+/* 12 - Formulário */
+/* 12 - Rodapé     */
 
 
 /* All */
@@ -16,9 +21,6 @@
 	box-sizing: border-box;
 }
 
-body {
-	/* background-color: red */
-}
 
 /* fonts by google */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
@@ -529,10 +531,6 @@ body {
 /*            */
 
 
-/* #div4 {
-	position: relative;
-} */
-
 #div4 {
 	height: 100vh;
     position: relative;
@@ -602,6 +600,10 @@ body {
 	font-size: 30px;
 	padding-bottom: 1rem;
 }
+
+/*               */
+/*   Formulário  */
+/*               */
 
 .formulario {
 	background-color: white;
@@ -689,6 +691,10 @@ body {
     left: 0;
     width: 100%;
 }
+
+/*           */
+/*   Rodapé  */
+/*           */
 
 .rodape-div a {
 	text-decoration: none;
